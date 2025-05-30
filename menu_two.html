@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Zad</title>
+    <link rel="stylesheet" href="menu_two.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/zad_al_baher-logo-tr.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&family=Nunito+Sans:ital,opsz,wght,YTLC@0,6..12,300,519;1,6..12,300,519&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="separator">
+            <hr class="line">
+            <img src="pictures/zad_al_baher-logo-tr.png" alt="Separator Image" class="separator-image">
+            <hr class="line">
+        </div>
+        <h2>Zad Al Baher - Restaurant</h2>
+        <h1>Menu</h1>
+    </header>
+
+    <main>
+        <section class="filter-buttons">
+            <button class="filter-btn" onclick="filterMenu('all')">All</button>
+            <button class="filter-btn" onclick="filterMenu('salad')">Salad</button>
+            <button class="filter-btn" onclick="filterMenu('cold-appetizers')">Cold Appetizers</button>
+            <button class="filter-btn" onclick="filterMenu('hot-appetizers')">Hot Appetizers</button>
+            <button class="filter-btn" onclick="filterMenu('bbq')">BBQ</button>
+            <button class="filter-btn" onclick="filterMenu('main-course')">Main Course</button>
+            <button class="filter-btn" onclick="filterMenu('raw-fish')">Raw Fish</button>
+            <button class="filter-btn" onclick="filterMenu('cold-beverage')">Cold Beverage</button>
+            <button class="filter-btn" onclick="filterMenu('hot-beverage')">Hot Beverage</button>
+            <button class="filter-btn" onclick="filterMenu('argile')">Argile</button>
+            <button class="filter-btn" onclick="filterMenu('desserts')">Desserts</button>
+            <button class="filter-btn" onclick="filterMenu('beers-arak')">Beers Arak</button>
+        </section>
+    
+        <section class="menu" id="menu">
+            <div class="menu-section salad">
+                <h2>Salad</h2>
+                <p><strong>Salmon Kale</strong> <span class="description">A healthy salad with salmon and kale</span> <span class="price">$15.00</span></p>
+                <p><strong>Caesar Salad</strong> <span class="description">Classic Caesar salad with croutons and parmesan</span> <span class="price">$12.00</span></p>
+            </div>
+    
+            <div class="menu-section cold-appetizers">
+                <h2>Cold Appetizers</h2>
+                <p><strong>Bruschetta</strong> <span class="description">Toasted bread topped with tomatoes and basil</span> <span class="price">$10.00</span></p>
+                <p><strong>Stuffed Grape Leaves</strong> <span class="description">Grape leaves stuffed with rice and herbs</span> <span class="price">$8.00</span></p>
+            </div>
+    
+            <div class="menu-section hot-appetizers">
+                <h2>Hot Appetizers</h2>
+                <p><strong>Fried Calamari</strong> <span class="description">Crispy fried calamari served with marinara sauce</span> <span class="price">$12.00</span></p>
+                <p><strong>Stuffed Mushrooms</strong> <span class="description">Mushrooms stuffed with cheese and herbs</span> <span class="price">$11.00</span></p>
+            </div>
+    
+            <div class="menu-section bbq">
+                <h2>BBQ</h2>
+                <p><strong>Grilled Chicken</strong> <span class="description">Marinated grilled chicken served with BBQ sauce</span> <span class="price">$15.00</span></p>
+                <p><strong>BBQ Ribs</strong> <span class="description">Tender ribs smothered in BBQ sauce</span> <span class="price">$20.00</span></p>
+            </div>
+    
+            <div class="menu-section main-course">
+                <h2>Main Course</h2>
+                <p><strong>Grilled Salmon</strong> <span class="description">Salmon fillet grilled to perfection</span> <span class="price">$25.00</span></p>
+                <p><strong>Steak</strong> <span class="description">Juicy steak cooked to your liking</span> <span class="price">$30.00</span></p>
+            </div>
+    
+            <div class="menu-section raw-fish">
+                <h2>Raw Fish</h2>
+                <p><strong>Sushi Platter</strong> <span class="description">Assorted sushi rolls</span> <span class="price">$35.00</span></p>
+                <p><strong>Tuna Sashimi</strong> <span class="description">Sliced fresh tuna served with soy sauce</span> <span class="price">$45.00</span></p>
+            </div>
+    
+            <div class="menu-section cold-beverage">
+                <h2>Cold Beverage</h2>
+                <p><strong>Iced Tea</strong> <span class="description">Refreshing iced tea</span> <span class="price">$5.00</span></p>
+                <p><strong>Fruit Smoothie</strong> <span class="description">Smoothie made with fresh fruits</span> <span class="price">$7.00</span></p>
+            </div>
+    
+            <div class="menu-section hot-beverage">
+                <h2>Hot Beverage</h2>
+                <p><strong>Coffee</strong> <span class="description">Freshly brewed coffee</span> <span class="price">$3.00</span></p>
+                <p><strong>Tea</strong> <span class="description">Selection of herbal and black teas</span> <span class="price">$3.00</span></p>
+            </div>
+    
+            <div class="menu-section argile">
+                <h2>Argile</h2>
+                <p><strong>Fruit Flavored Argile</strong> <span class="description">Argile with a variety of fruit flavors</span> <span class="price">$15.00</span></p>
+            </div>
+    
+            <div class="menu-section desserts">
+                <h2>Desserts</h2>
+                <p><strong>Chocolate Cake</strong> <span class="description">Rich chocolate cake with frosting</span> <span class="price">$6.00</span></p>
+                <p><strong>Cheesecake</strong> <span class="description">Creamy cheesecake with a graham cracker crust</span> <span class="price">$7.00</span></p>
+            </div>
+    
+            <div class="menu-section beers-arak">
+                <h2>Beers & Arak</h2>
+                <p><strong>Local Beer</strong> <span class="description">Refreshing local beer</span> <span class="price">$5.00</span></p>
+                <p><strong>Arak</strong> <span class="description">Traditional anise-flavored spirit</span> <span class="price">$8.00</span></p>
+            </div>
+        </section>
+
+        <div class="separator">
+            <hr class="line">
+            <img src="pictures/zad_al_baher-logo-tr.png" alt="Separator Image" class="separator-image">
+            <hr class="line">
+        </div>
+    </main>
+
+    <script>
+        function filterMenu(category) {
+            const sections = document.querySelectorAll('.menu-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+
+            if (category === 'all') {
+                sections.forEach(section => {
+                    section.style.display = 'block'; // Show all sections
+                });
+            } else {
+                const activeSection = document.querySelector(`.${category}`);
+                if (activeSection) {
+                    activeSection.style.display = 'block'; // Show selected category
+                }
+            }
+
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Add active class to the clicked button
+            const activeButton = Array.from(buttons).find(button => button.textContent.toLowerCase() === category.replace('-', ' '));
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+        }
+
+        // Initial display of all menu items
+        filterMenu('all'); // Show all items by default
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+:root {
+    --bg: #f9fafb;
+    /* --green: #002B2A; */
+    --green: #004b49;
+    --gold-1: goldenrod;
+    --gold-2: #a07b1b;
+    --gold-3: #aa9d3a;
+    --tr-gold-1: #aa9d3a0d;
+    --tr-gold-2: #aa9d3a32;
+
+    --font-fam-1: "Parisienne", cursive;
+    --font-fam-2: "Nunito Sans", sans-serif;
+    --font-fam-3: "Dancing Script", cursive;
+    --font-fam-4: 'Times New Roman', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */ 
+    font-family: var(--font-fam-2);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 519; 
+    background-color: var(--bg);
+}
+
+@media screen and (max-width: 414px) {
+
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
