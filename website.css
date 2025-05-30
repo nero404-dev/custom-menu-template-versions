@@ -1,0 +1,271 @@
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url('pictures/neon-wang-rwI0vk9qYyc-unsplash-copy.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    color: var(--bg);
+    text-align: center;
+}
+
+header .logo {
+    width: 15%;
+    margin: 30px 0;
+}
+
+header .logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    filter: brightness(1);
+    transition: 0.3s;
+}
+
+header .logo img:hover {
+    filter: brightness(0.8);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    cursor: default;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+header nav ul li a {
+    color: var(--bg);
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: 0.6s;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid var(--gold-3);
+}
+
+header h1 {
+    margin: 30px 0;
+    color: var(--bg);
+}
+
+main section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+main section h2 {
+    margin: 30px 0;
+    font-family: var(--font-fam-1);
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: var(--gold-2);
+    padding-left: 10px;
+    border-left: 2px solid var(--green);
+}
+
+.about p {
+    color: var(--green);
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.separator {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center the image */
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+.line {
+    flex-grow: 1; /* Allow the line to grow and fill space */
+    height: 0px; /* Set the height of the line */
+    background-color: unset; /* Set the color of the line */
+    margin: 0; /* Add some spacing around the lines */
+    border: 1px solid var(--gold-3);
+    border-radius: 5px;
+}
+
+.separator-image {
+    max-width: 50px; /* Set a max width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.location iframe {
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+    height: 70vh; /* Set desired height */
+    border-radius: 5px;
+}
+
+footer {
+    margin: 50px 0;
+    background-color: var(--tr-gold-1);
+}
+
+footer .footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+
+footer .footer .row-1 .logo {
+    width: 20%;
+    display: block;
+    margin: 10px auto 50px auto;
+    text-align: center;
+}
+
+footer .footer .row-1 .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .footer .row-2 {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* footer .footer .row-2 .col-1 {
+    width: 10%;
+    height: 10%;
+    border-right: 2px solid var(--gold-3);
+    padding-right: 10px;
+}
+
+footer .footer .row-2 .col-1 img {
+    width: 100%;
+    height: 100%;
+} */
+
+footer .footer .row-2 .col h3 {
+    color: var(--green);
+    border-bottom: 1px solid var(--gold-3);
+    padding-bottom: 3px;
+    margin: 0 0 20px 0;
+    font-family: var(--font-fam-1);
+    letter-spacing: 10px;
+}
+
+footer .footer .row-2 .col-2 a {
+    text-decoration: none;
+    color: var(--gold-2);
+    font-weight: 300;
+}
+
+footer .footer .row-2 .col-2 a:hover {
+    font-weight: 600;
+}
+
+footer .footer .row-2 .col-2 p {
+    margin: 10px 0;
+    color: var(--gold-2);
+}
+
+footer .footer .row-2 .col-3 a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: var(--gold-2);
+    font-weight: 300;
+}
+
+footer .footer .row-2 .col-3 a:hover {
+    font-weight: 600;
+}
+
+footer .footer .row-2 .col-4 a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--gold-2);
+    font-size: 20px;
+    font-weight: 100;
+    transition: 0.6s;
+}
+
+footer .footer .row-2 .col-4 a:hover {
+    color: var(--green);
+}
+
+footer .footer .row-2 .col-5 a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: var(--gold-2);
+    font-weight: 300;
+}
+
+footer .footer .row-2 .col-5 a:hover {
+    font-weight: 600;
+}
+
+footer .separator {
+    margin: 50px 0 0 0;
+}
+
+footer .row-3 p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 30px 0;
+    margin: 0;
+    color: var(--gold-3);
+}
+
+footer .row-3 p a {
+    color: var(--orange-3);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .row-3 p a:hover {
+    color: var(--green-3);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 414px) {
+    header .logo {
+        width: 50%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    main section {
+        width: 90%;
+    }
+
+    footer .footer {
+        width: 90%;
+    }
+    footer .footer .row-1 .logo {
+        width: 50%;
+    }
+    footer .footer .row-2 {
+        display: block;
+        gap: unset;
+        justify-content: unset;
+    }
+    footer .footer .row-2 .col {
+        margin: 50px 0;
+    }
+}
